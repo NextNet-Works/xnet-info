@@ -1,0 +1,82 @@
+{
+    "$schema": "../chain.schema.json",
+    "chain_name": "Nextnet",
+    "status": "live",
+    "network_type": "testnet",
+    "website": "",
+    "pretty_name": "Nextnet",
+    "chain_id": "xnet_03012023-1",
+    "bech32_prefix": "xnet",
+    "daemon_name": "xnetd",
+    "node_home": "$HOME/.xnet",
+    "slip44": 118,
+    "fees": {
+      "fee_tokens": [
+        {
+          "denom": "uxnet"
+        }
+      ]
+    },
+    "staking": {
+      "staking_tokens": [
+        {
+          "denom": "uxnet"
+        }
+      ]
+    },
+    "codebase": {
+      "git_repo": "https://github.com/NextNet-Works/xnet-chain.git",
+      "recommended_version": "v0.1.1",
+      "compatible_versions": [
+        "v0.1.1"
+      ],
+      "genesis": {
+        "genesis_url": "https://github.com/NextNet-Works/xnet-info/raw/master/testnet/genesis.tar.gz"
+      },
+      "versions": [
+        {
+          "name": "v0.1.1",
+          "recommended_version": "v0.1.1",
+          "compatible_versions": [
+            "v0.1.1"
+          ]
+        }
+      ]
+    },
+    "peers": {
+      "seeds": [
+        {
+          "id": "a378a00099bb4a875d8577fc7d236713d3fbaa34",
+          "address": "54.177.136.249:26656"
+        }
+      ],
+      "persistent_peers": [
+        {
+          "id": "a378a00099bb4a875d8577fc7d236713d3fbaa34",
+          "address": "54.177.136.249:26656"
+        }
+      ]
+    },
+    "apis": {
+      "rpc": [
+        {
+          "address": "http://xnet.nextnet.zone:26657",
+          "provider": "Nextnet"
+        }
+      ],
+      "rest": [
+        {
+          "address": "http://xnet.nextnet.zone:1317",
+          "provider": "Nextnet"
+        }
+      ],
+      "grpc": [
+        {
+          "address": "http://xnet.nextnet.zone:9090",
+          "provider": "Nextnet"
+        }
+      ]
+    },
+    "explorers": [
+    ]
+  }
